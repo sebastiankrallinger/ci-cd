@@ -32,7 +32,7 @@ jobs:
               run: dotnet publish -c Release -o ./out 05_ci_cd.sln
 
             - name: Deploy to Azure Web Apps
-              uses: azure/webapps-deploy@2
+              uses: azure/webapps-deploy@v2
               with:
                 app-name: MyWeatherAPI
                 publish-profile: ${{ secrets.AZURE_WEBAPP_MYWHEATERFORECAST }}
