@@ -27,3 +27,6 @@ jobs:
 
             - name: Build App 🛥️
               run: dotnet build -c Release --no-restore 05_ci_cd.sln
+
+            - name: Publish App
+              run: dotnet publish -c Release -o ./out 05_ci_cd.sln
